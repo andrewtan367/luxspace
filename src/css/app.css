@@ -32,6 +32,63 @@
 
   .hero .hero-image,
   .hero .hero-caption {
+    min-height: auto;
+  }
+
+  .hero .hero-cta {
+    @apply w-20 h-20 -translate-x-1/2 -translate-y-1/2;
+    background-size: auto;
+  }
+
+  .card .card-shadow {
+    @apply transition duration-300 shadow-none h-full;
+  }
+
+  .card:hover .card-shadow {
+    @apply shadow-lg;
+  }
+}
+
+@layer utilities {
+  .stretched-link {
+    @apply absolute inset-0 z-10 cursor-pointer;
+  }
+
+  .grid {
+    grid-auto-flow: dense;
+    grid-auto-rows: minmax(180px, auto);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header .navbar-custom li {
+    @apply mx-1;
+  }
+
+  header .navbar-custom li a {
+    @apply text-base;
+  }
+
+  .hero h1 {
+    @apply text-3xl mt-4;
+  }
+
+  .hero h2 {
+    @apply text-sm;
+  }
+
+  .card .card-title {
+    @apply pl-44;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header .navbar-custom li a {
+    @apply text-sm;
+  }
+
+  .hero .hero-image,
+  .hero .hero-caption {
     min-height: 90vh;
   }
 
@@ -40,16 +97,8 @@
     transform: translateY(-50%) translateX(-75px);
     background-size: 37.5%;
   }
-}
 
-@screen md {
-  .hero .hero-image,
-  .hero .hero-caption {
-    min-height: auto;
-  }
-
-  .hero .hero-cta {
-    @apply w-20 h-20 -translate-x-1/2 -translate-y-1/2;
-    background-size: auto;
+  .card .card-title {
+    @apply pl-8;
   }
 }
