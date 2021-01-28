@@ -80,6 +80,10 @@
   .card .card-title {
     @apply pl-44;
   }
+
+  .client-section .client-item div {
+    @apply mb-8;
+  }
 }
 
 @media screen and (max-width: 767px) {

@@ -93,7 +93,7 @@ import { addClass, removeClass } from "./utils-class";
       itemToShow = 4,
       slides = items.getElementsByClassName("card"),
       slidesLength = slides.length,
-      slideSize = items.getElementsByClassName("card")[0].offsideWidth,
+      slideSize = items.getElementsByClassName("card")[0].offsetWidth,
       index = 0,
       allowShift = true;
 
