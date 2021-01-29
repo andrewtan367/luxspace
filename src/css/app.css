@@ -60,6 +60,14 @@
   }
 }
 
+a.cart svg g circle.dot {
+  @apply hidden;
+}
+
+a.cart.cart-filled svg g circle.dot {
+  @apply block;
+}
+
 @media screen and (max-width: 1024px) {
   header .navbar-custom li {
     @apply mx-1;
@@ -79,10 +87,6 @@
 
   .card .card-title {
     @apply pl-44;
-  }
-
-  .client-section .client-item div {
-    @apply mb-8;
   }
 }
 
