@@ -282,3 +282,92 @@ import { addClass, removeClass } from "./utils-class";
     }
   }
 })();
+
+// --------------------------Shopping Cart Section------------------------------------
+(() => {
+  const cart = ["1", "2", "3"];
+  localStorage.setItem("cart", JSON.stringify(cart));
+
+  const shoppingCart = document.getElementById("shopping-cart");
+
+  if (shoppingCart) {
+    const headerCart = document.getElementById("header-cart");
+    const buttons = shoppingCart.querySelectorAll("button[data-delete-item]");
+
+    for (let index = 0; index < buttons.length; index++) {
+      const button = buttons[index];
+      const id = button.attributes["data-delete-item"].value;
+
+      button.addEventListener("click", function () {
+        shoppingCart.querySelector(`div[data-row='${id}']`).remove();
+
+        const localStorageCart =
+          localStorage.getItem("cart") &&
+          JSON.parse(localStorage.getItem("cart"));
+
+        const found = localStorageCart.indexOf(id);
+        if (found > -1) {
+          localStorageCart.splice(found, 1);
+          localStorage.setItem("cart", JSON.stringify(localStorageCart));
+        }
+
+        if (localStorageCart.length === 0) {
+          removeClass(headerCart, "cart-filled");
+          removeClass(document.getElementById("cart-empty"), "hidden");
+        }
+      });
+    }
+  }
+})();
+
+// ------------------ Shipping Detail --------------------
+(() => {
+  let data = {
+    "complete-name": "",
+    "email-address": "",
+    address: "",
+    "phone-number": "",
+    courier: "",
+    payment: "",
+  };
+
+  const inputs = document.querySelectorAll(
+    "#shipping-detail input[data-input]"
+  );
+
+  for (let index = 0; index < inputs.length; index++) {
+    const input = inputs[index];
+
+    input.addEventListener("change", function (event) {
+      data[event.target.id] = event.target.value;
+
+      check();
+    });
+  }
+
+  const options = document.querySelectorAll(
+    "#shipping-detail button[data-name]"
+  );
+  for (let index = 0; index < options.length; index++) {
+    const option = options[index];
+
+    option.addEventListener("click", function () {
+      const value = this.attributes["data-value"].value;
+      const name = this.attributes["data-name"].value;
+
+      data[name] = value;
+
+      check();
+    });
+  }
+
+  function check() {
+    console.log(data);
+    const find = Object.values(data).filter((item) => item === "");
+    if (find.length === 0) {
+      document.querySelector(
+        "#shipping-detail button[type='submit']"
+      ).disabled = false;
+    }
+  }
+})();
