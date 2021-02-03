@@ -35,7 +35,7 @@
     <!-- Add your site or application content here -->
 
     <!-- Header Section Start -->
-    <header class="absolute w-full z-50 px-4">
+    <header class="w-full z-50 px-4">
       <div class="container mx-auto py-10">
         <div class="flex justify-items-stretch items-center justify-center">
           <!-- Logo Section Start -->
@@ -57,33 +57,25 @@
               class="fixed bg-white inset-0 flex flex-col invisible items-center justify-center opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100"
             >
               <li class="mx-3 py-6 md:py-0">
-                <a
-                  href="#"
-                  class="text-black hover:text-white hover:underline text-lg"
+                <a href="#" class="text-black hover:underline text-lg"
                   >Showcase</a
                 >
               </li>
 
               <li class="mx-3 py-6 md:py-0">
-                <a
-                  href="#"
-                  class="text-black hover:text-white hover:underline text-lg"
+                <a href="#" class="text-black hover:underline text-lg"
                   >Catalog</a
                 >
               </li>
 
               <li class="mx-3 py-6 md:py-0">
-                <a
-                  href="#"
-                  class="text-black hover:text-white hover:underline text-lg"
+                <a href="#" class="text-black hover:underline text-lg"
                   >Delivery</a
                 >
               </li>
 
               <li class="mx-3 py-6 md:py-0">
-                <a
-                  href="#"
-                  class="text-black hover:text-white hover:underline text-lg"
+                <a href="#" class="text-black hover:underline text-lg"
                   >Rewards</a
                 >
               </li>
@@ -123,7 +115,7 @@
               <li class="ml-6">
                 <a
                   href="cart.html"
-                  class="flex justify-center w-8 h-8 text-black hover:text-white cart cart-filled"
+                  class="flex justify-center w-8 h-8 text-black cart cart-filled"
                   id="header-cart"
                   ><svg
                     width="29"
@@ -167,360 +159,59 @@
     </header>
     <!-- Header Section End -->
 
-    <!-- Hero Section Start -->
-    <section class="flex items-center hero">
-      <div
-        class="w-full absolute z-20 inset-0 md:relative md:w-1/2 text-center flex flex-col justify-center hero-caption"
-        data-aos="zoom-in"
-        data-aos-duration="1000"
-      >
-        <h1 class="text-5xl leading-light font-semibold">
-          The Room <br class="" />
-          You’ve Dreaming
-        </h1>
-
-        <h2
-          class="px-8 text-base md:px-0 md:text-lg mt-5 tracking-wide font-normal"
-        >
-          We provide classy furniture <br />
-          make the room feel homey
-        </h2>
-
-        <div>
-          <a
-            href="#browse-the-room"
-            class="mt-7 bg-pink-300 text-black hover:bg-black hover:text-pink-300 rounded-full px-8 py-2.5 inline-block flex-none transition duration-200 font-semibold"
-            >Explore Now</a
-          >
-        </div>
-      </div>
-
-      <div class="w-full inset-0 md:relative md:w-1/2">
-        <div class="relative hero-image">
-          <div class="overlay inset-0 bg-black opacity-30 z-10"></div>
-          <div class="overlay right-0 bottom-0 md:inset-0">
-            <button
-              class="video hero-cta focus:outline-none z-30 modal-trigger"
-              data-content='<div class="w-screen pb-56 md:w-88 relative z-50">
-              <div class="absolute w-full h-full">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2BXRGzjo1_Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            </div>'
-            ></button>
-          </div>
-          <img
-            src="images/content/hero-image.jpg"
-            alt="House with sofa and some plant"
-            class="absolute inset-0 md:relative w-full h-full object-cover object-center"
-          />
-        </div>
-      </div>
-    </section>
-    <!-- Hero Section End -->
-
-    <!-- Browse Section Start -->
-    <section class="flex bg-gray-100 py-24 px-4" id="browse-the-room">
+    <!-- Breadcrumb Section Start -->
+    <section class="bg-gray-50 py-10 px-4">
       <div class="container mx-auto">
-        <div
-          class="flex justify-start mb-7"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <h3 class="text-2xl capitalize font-semibold">
-            browse the room <br />
-            That We Designed For You
-          </h3>
-        </div>
-
-        <div class="grid grid-rows-2 grid-cols-9 gap-4">
-          <!-- Items Browse Start 1 -->
-          <div
-            class="relative col-span-9 row-span-1 md:col-span-4 card"
-            style="height: 180px"
-            data-aos="zoom-in"
-            data-aos-duration="1200"
-          >
-            <div class="card-shadow rounded-xl">
-              <img
-                src="./images/content/image-1.jpg"
-                alt=""
-                class="w-full h-full object-cover overlay overflow-hidden rounded-xl"
-              />
-            </div>
-
-            <div
-              class="overlay left-0 top-0 bottom-0 flex justify-center flex-col pl-96 card-title"
-            >
-              <h5 class="text-xl font-semibold capitalize">living room</h5>
-              <span>18,309 items</span>
-            </div>
-            <a href="details.html" class="stretched-link"></a>
-          </div>
-          <!-- Items Browse End 1 -->
-
-          <!-- Items Browse Start 2 -->
-          <div
-            class="relative col-span-9 row-span-1 md:col-span-2 md:row-span-2 card"
-            data-aos="zoom-in"
-            data-aos-duration="1600"
-          >
-            <div class="card-shadow rounded-xl">
-              <img
-                src="./images/content/image-4.jpg"
-                alt=""
-                class="w-full h-full object-cover overlay overflow-hidden rounded-xl"
-              />
-            </div>
-
-            <div
-              class="overlay inset-0 md:bottom-auto flex justify-center md:items-center flex-col pl-8 md:pl-0 pt-0 md:pt-12"
-            >
-              <h5 class="text-xl font-semibold capitalize">decoration</h5>
-              <span>77,329 items</span>
-            </div>
-            <a href="details.html" class="stretched-link"></a>
-          </div>
-          <!-- Items Browse End 2 -->
-
-          <!-- Items Browse Start 3 -->
-          <div
-            class="relative col-span-9 row-span-1 md:col-span-3 md:row-span-2 card"
-            data-aos="zoom-in"
-            data-aos-duration="1800"
-          >
-            <div class="card-shadow rounded-xl">
-              <img
-                src="./images/content/image-3.jpg"
-                alt=""
-                class="w-full h-full object-cover overlay overflow-hidden rounded-xl"
-              />
-            </div>
-
-            <div
-              class="overlay inset-0 md:bottom-auto flex justify-center md:items-center flex-col pl-8 md:pl-0 pt-0 md:pt-12"
-            >
-              <h5 class="text-xl font-semibold capitalize">bed room</h5>
-              <span>22,094 items</span>
-            </div>
-            <a href="details.html" class="stretched-link"></a>
-          </div>
-          <!-- Items Browse End 3 -->
-
-          <!-- Items Browse Start 4 -->
-          <div
-            class="relative col-span-9 row-span-1 md:col-span-4 card"
-            style="height: 180px"
-            data-aos="zoom-in"
-            data-aos-duration="1400"
-          >
-            <div class="card-shadow rounded-xl">
-              <img
-                src="./images/content/image-2.jpg"
-                alt=""
-                class="w-full h-full object-cover overlay overflow-hidden rounded-xl"
-              />
-            </div>
-
-            <div
-              class="overlay left-0 top-0 bottom-0 flex justify-center flex-col pl-96 card-title"
-            >
-              <h5 class="text-xl font-semibold capitalize">children room</h5>
-              <span>837 items</span>
-            </div>
-            <a href="details.html" class="stretched-link"></a>
-          </div>
-          <!-- Items Browse End 4 -->
-        </div>
+        <ul class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#" aria-label="current-page">Success Checkout</a></li>
+        </ul>
       </div>
     </section>
-    <!-- Browse Section End -->
+    <!-- Breadcrumb Section End -->
 
-    <!-- Carousel Section Start -->
-    <section class="flex flex-col py-24">
+    <!-- Success Section Start -->
+    <section class="py-4 md:py-16">
       <div class="container mx-auto">
-        <div
-          class="flex justify-center text-center mb-16"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <h3 class="text-2xl capitalize font-semibold mb-1.5">
-            Just Arrived <br />
-            This Summer For You
-          </h3>
-        </div>
-      </div>
-
-      <div class="overflow-x-hidden px-4" id="carousel">
-        <div class="container mx-4"></div>
-
-        <div class="flex -mx-4 flex-row relative">
-          <!-- Carousel 1 Start -->
-          <div
-            class="px-4 relative card"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <div
-              class="rounded-xl overflow-hidden card-shadow"
-              style="height: 386px; width: 287px"
+        <div class="flex flex-col items-center justify-center">
+          <div class="w-full md:w-4/12 text-center">
+            <img
+              src="./images/content/success.png"
+              alt="success image"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            />
+            <h2
+              class="text-3xl font-semibold mb-4"
+              data-aos="zoom-in"
+              data-aos-duration="1400"
             >
-              <img
-                src="./images/content/carousel-1.jpg"
-                alt="cangkir"
-                class="w-full h-full object-cover object-center"
-              />
-            </div>
-            <h5 class="text-xl font-semibold mt-6">Cangkir Mauttie</h5>
-            <span>IDR 89.300</span>
-            <a href="#details.html" class="stretched-link"></a>
-          </div>
-          <!-- Carousel 1 End -->
-
-          <!-- Carousel 2 Start -->
-          <div
-            class="px-4 relative card"
-            data-aos="fade-up"
-            data-aos-duration="1300"
-          >
-            <div
-              class="rounded-xl overflow-hidden card-shadow"
-              style="height: 386px; width: 287px"
+              Ah yes it’s success!
+            </h2>
+            <p
+              class="text-lg mb-12 px-4"
+              data-aos="zoom-in"
+              data-aos-duration="1800"
             >
-              <img
-                src="./images/content/carousel-2.jpg"
-                alt="bangku"
-                class="w-full h-full object-cover object-center"
-              />
-            </div>
-            <h5 class="text-xl font-semibold mt-6">Bankyu Minimax</h5>
-            <span>IDR 67.000</span>
-            <a href="#details.html" class="stretched-link"></a>
-          </div>
-          <!-- Carousel 2 End -->
-
-          <!-- Carousel 3 Start -->
-          <div
-            class="px-4 relative card"
-            data-aos="fade-up"
-            data-aos-duration="1600"
-          >
-            <div
-              class="rounded-xl overflow-hidden card-shadow"
-              style="height: 386px; width: 287px"
+              Furniture yang anda beli akan kami kirimkan saat ini juga so now
+              please sit tight and be ready for it
+            </p>
+            <a
+              href="index.html"
+              class="text-gray-900 bg-pink-300 focus:outline-none w-full py-3 rounded-full text-lg font-semibold focus:text-black transition duration-200 px-8"
+              data-aos="zoom-in"
+              data-aos-duration="2200"
+              >Back to Shop</a
             >
-              <img
-                src="./images/content/carousel-3.jpg"
-                alt="buku"
-                class="w-full h-full object-cover object-center"
-              />
-            </div>
-            <h5 class="text-xl font-semibold mt-6">Buku Sidu Edition</h5>
-            <span>IDR 12.000</span>
-            <a href="#details.html" class="stretched-link"></a>
           </div>
-          <!-- Carousel 3 End -->
-
-          <!-- Carousel 4 Start -->
-          <div
-            class="px-4 relative card"
-            data-aos="fade-up"
-            data-aos-duration="1900"
-          >
-            <div
-              class="rounded-xl overflow-hidden card-shadow"
-              style="height: 386px; width: 287px"
-            >
-              <img
-                src="./images/content/carousel-4.jpg"
-                alt="smartwatch"
-                class="w-full h-full object-cover object-center"
-              />
-            </div>
-            <h5 class="text-xl font-semibold mt-6">Watch Notes X</h5>
-            <span>IDR 7.300.000</span>
-            <a href="#details.html" class="stretched-link"></a>
-          </div>
-          <!-- Carousel 4 End -->
-
-          <!-- Carousel 5 Start -->
-          <div
-            class="px-4 relative card"
-            data-aos="fade-up"
-            data-aos-duration="2200"
-          >
-            <div
-              class="rounded-xl overflow-hidden card-shadow"
-              style="height: 386px; width: 287px"
-            >
-              <img
-                src="./images/content/carousel-5.jpg"
-                alt="plants rack"
-                class="w-full h-full object-cover object-center"
-              />
-            </div>
-            <h5 class="text-xl font-semibold mt-6">Racking Plants</h5>
-            <span>IDR 240.000</span>
-            <a href="#details.html" class="stretched-link"></a>
-          </div>
-          <!-- Carousel 5 End -->
         </div>
       </div>
     </section>
-    <!-- Carousel Section End -->
-
-    <!-- Client Section Start -->
-    <section
-      class="container mx-auto client-section"
-      data-aos="zoom-in"
-      data-aos-duration="1000"
-    >
-      <div class="flex justify-center items-center flex-wrap client-item">
-        <div
-          class="w-full flex-auto md:w-auto md:flex-initial px-4 md:px-9 mb-8"
-        >
-          <img
-            src="./images/content/logo-adobe.png"
-            alt="logo adobe"
-            class="mx-auto"
-          />
-        </div>
-
-        <div
-          class="w-full flex-auto md:w-auto md:flex-initial px-4 md:px-9 mb-8"
-        >
-          <img
-            src="./images/content/logo-ikea.png"
-            alt="logo ikea"
-            class="mx-auto"
-          />
-        </div>
-
-        <div
-          class="w-full flex-auto md:w-auto md:flex-initial px-4 md:px-9 mb-8"
-        >
-          <img
-            src="./images/content/logo-herman.png"
-            alt="logo herman-miller"
-            class="mx-auto"
-          />
-        </div>
-
-        <div
-          class="w-full flex-auto md:w-auto md:flex-initial px-4 md:px-9 mb-8"
-        >
-          <img
-            src="./images/content/logo-miele.png"
-            alt="logo miele"
-            class="mx-auto"
-          />
-        </div>
-      </div>
-    </section>
-    <!-- Client Section End -->
+    <!-- Success Section End -->
 
     <!-- Aside Footer Section Start -->
     <section class="">
-      <div class="border-t border-b border-gray-100 py-16 mt-16 px-4">
+      <div class="border-b border-t border-gray-100 py-16 px-4">
         <div class="flex justify-center mb-16">
           <img
             src="images/design/logo.svg"

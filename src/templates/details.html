@@ -26,6 +26,7 @@
 
     <link rel="stylesheet" href="./css/app.minify.css" />
     <link rel="icon" href="images/favicon.ico" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <meta name="theme-color" content="#000" />
   </head>
@@ -171,7 +172,11 @@
     <!-- Breadcrumb Section End -->
 
     <!-- Detail Section Start-->
-    <section class="container mx-auto">
+    <section
+      class="container mx-auto"
+      data-aos="zoom-in"
+      data-aos-duration="1500"
+    >
       <div class="flex flex-wrap my-4 md:my-16">
         <div class="w-full md:hidden px-4">
           <h2 class="text-5xl font-semibold mb-2.5">Chair Thatty</h2>
@@ -315,7 +320,11 @@
     <!-- Suggestion Section Start -->
     <section class="bg-gray-50 px-4 py-24">
       <div class="container mx-auto py-1">
-        <div class="flex justify-start mb-7">
+        <div
+          class="flex justify-start mb-7"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <h3 class="text-3xl font-semibold capitalize leading-10">
             Complete Your Room <br />
             With What We Designed
@@ -324,7 +333,11 @@
 
         <div class="flex flex-wrap overflow-x-auto mb-4 -mx-3">
           <!-- Suggestion 1 Start-->
-          <div class="px-3 w-full md:w-3/12 mb-4 md:mb-0">
+          <div
+            class="px-3 w-full md:w-3/12 mb-4 md:mb-0"
+            data-aos="fade-up"
+            data-aos-duration="1300"
+          >
             <div class="rounded-xl p-4 relative bg-white">
               <div class="rounded-xl overflow-hidden card-shadow w-full h-48">
                 <img
@@ -341,7 +354,11 @@
           <!-- Suggestion 1 End-->
 
           <!-- Suggestion 2 Start-->
-          <div class="px-3 w-full md:w-3/12 mb-4 md:mb-0">
+          <div
+            class="px-3 w-full md:w-3/12 mb-4 md:mb-0"
+            data-aos="fade-up"
+            data-aos-duration="1600"
+          >
             <div class="rounded-xl p-4 relative bg-white">
               <div class="rounded-xl overflow-hidden card-shadow w-full h-48">
                 <img
@@ -358,7 +375,11 @@
           <!-- Suggestion 2 End-->
 
           <!-- Suggestion 3 Start-->
-          <div class="px-3 w-full md:w-3/12 mb-4 md:mb-0">
+          <div
+            class="px-3 w-full md:w-3/12 mb-4 md:mb-0"
+            data-aos="fade-up"
+            data-aos-duration="1900"
+          >
             <div class="rounded-xl p-4 relative bg-white">
               <div class="rounded-xl overflow-hidden card-shadow w-full h-48">
                 <img
@@ -375,7 +396,11 @@
           <!-- Suggestion 3 End-->
 
           <!-- Suggestion 4 Start-->
-          <div class="px-3 w-full md:w-3/12">
+          <div
+            class="px-3 w-full md:w-3/12"
+            data-aos="fade-up"
+            data-aos-duration="2200"
+          >
             <div class="rounded-xl p-4 relative bg-white">
               <div class="rounded-xl overflow-hidden card-shadow w-full h-48">
                 <img
@@ -533,5 +558,11 @@
       ga("send", "pageview");
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+    <!-- Custom Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -362,7 +362,6 @@ import { addClass, removeClass } from "./utils-class";
   }
 
   function check() {
-    console.log(data);
     const find = Object.values(data).filter((item) => item === "");
     if (find.length === 0) {
       document.querySelector(
